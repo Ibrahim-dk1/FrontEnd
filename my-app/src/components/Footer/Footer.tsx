@@ -60,17 +60,17 @@ export default function Footer() {
               <h4 className="font-medium mb-4">Company</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>
-                  <Link to="/" className="hover:text-primary transition">
+                  <Link to="/About" className="hover:text-primary transition">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="hover:text-primary transition">
+                  <Link to="/Careers" className="hover:text-primary transition">
                     Careers
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="hover:text-primary transition">
+                  <Link to="/Contact" className="hover:text-primary transition">
                     Contact
                   </Link>
                 </li>
@@ -81,17 +81,17 @@ export default function Footer() {
               <h4 className="font-medium mb-4">Resources</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>
-                  <Link to="/" className="hover:text-primary transition">
+                  <Link to="/HelpCenter" className="hover:text-primary transition">
                     Help Center
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="hover:text-primary transition">
+                  <Link to="/PrivacyPolicy" className="hover:text-primary transition">
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="hover:text-primary transition">
+                  <Link to="/TermsOfService" className="hover:text-primary transition">
                     Terms of Service
                   </Link>
                 </li>

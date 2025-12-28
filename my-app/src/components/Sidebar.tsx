@@ -81,9 +81,12 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
               <p className="mt-1 text-xs text-muted-foreground">
                 If you are having trouble, Contact support.
               </p>
-              <Button variant="outline" size="sm" className="mt-3 w-full">
-                Get Support
+              <Button variant="outline" size="sm" className="mt-3 w-full" asChild>
+                <Link to="/contact">
+                  Get Support
+                </Link>
               </Button>
+
             </div>
           </div>
         </div>

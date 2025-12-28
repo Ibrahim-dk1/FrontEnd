@@ -1,7 +1,7 @@
 import Cta from "@/components/CTA/Cta";
 import FeaturedCourses from "@/components/featuredCourses/FeaturedCourses";
 import Features from "@/components/Features/Features";
-import Footer from "@/components/Footer/Footer";
+
 import HeroSection from "@/components/HeroSection/HeroSection";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
         <Features />
         <FeaturedCourses />
         <Cta />
-        <Footer />
+      
       </main>
     </div>
   );
