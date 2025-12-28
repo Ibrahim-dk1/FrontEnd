@@ -46,10 +46,10 @@ const CertificateGallery: React.FC = () => {
   const [selectedCert, setSelectedCert] = useState<Certificate | null>(null);
 
   return (
-    <div className="p-8 bg-slate-50 min-h-screen font-sans">
+    <div className="p-8 bg-card min-h-screen font-sans">
       <div className="max-w-6xl mx-auto">
         <header className="mb-10 text-left">
-          <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-card flex items-center gap-2">
             <Award className="text-blue-600" size={28} /> Learning Achievements
           </h2>
           <p className="text-slate-500 text-sm mt-1">
@@ -100,6 +100,7 @@ const CertificateGallery: React.FC = () => {
           <div className="relative w-full max-w-2xl bg-white shadow-2xl border-t-12 border-blue-600 p-8 md:p-12 z-10 transform transition-transform scale-100 duration-200">
             {/* Close Button */}
             <button
+              title="closebtn"
               onClick={() => setSelectedCert(null)}
               className="absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-900 rounded-full hover:bg-slate-100 transition-colors"
             >

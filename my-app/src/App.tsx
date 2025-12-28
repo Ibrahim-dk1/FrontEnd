@@ -8,6 +8,9 @@ import MyCourses from "./pages/MyCourses";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import Settings from "./pages/Settings";
+import Register from "./pages/register";
+import Navbar from "./components/Navbar/Navbar";
+import Login from "./pages/Login";
 
 function AppContent() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -15,11 +18,11 @@ function AppContent() {
 
   // Define paths where you DON'T want the sidebar
   const isHomePage = location.pathname === "/";
-
+  const isLoginpage = location.pathname === "/login";
+  const isRegisterPage = location.pathname === "/register";
   return (
     <div className="flex min-h-screen">
-      {/* Only render Sidebar if NOT on the home page */}
-      {!isHomePage && (
+      {!isHomePage && !isLoginpage && !isRegisterPage && (
         <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
       )}
 
@@ -34,6 +37,7 @@ function AppContent() {
             Open Menu
           </Button>
         )}
+        <Navbar />
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -42,6 +46,8 @@ function AppContent() {
           <Route path="/courses" element={<Courses />} />
           <Route path="/certificates" element={<Certificates />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
           <Route path="*" element={<h1>Welcome</h1>} />
         </Routes>
       </div>
